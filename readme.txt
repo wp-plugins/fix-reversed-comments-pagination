@@ -21,6 +21,8 @@ The second page will show comments 20 to 1.
 
 What WordPress should do instead is display comments 21 to 2 on the default page, and 1 on the second page. And that's what this plugin does.
 
+More details [here](http://winkpress.com/articles/fix-reversed-comments-pagination/).
+
 ### Installation ###
 
 Upload and activate. **Then** you must make a minor modification to your theme.
@@ -37,6 +39,8 @@ else
 wp_list_comments(array('walker' => $walker));`
 
 Note that the plugin will only take effect if your comments display settings are exactly like the red circles in the screenshot above. If your settings are different, the plugin won’t interfere with how your comments are displayed.
+
+More details [here](http://winkpress.com/articles/fix-reversed-comments-pagination/).
 
 ### One Thing to Consider ###
 
