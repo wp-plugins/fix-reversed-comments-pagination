@@ -11,9 +11,13 @@ Fixes WordPress reversed comments pagination issue where it doesn't fill the def
 == Description ==
 ### What Problem Does This Plugin Fix? ###
 
-![Discussion settings](http://winkpress.com/wp-content/uploads/2011/04/discussion-settings.png)
+If you have 21 comments on a certain post, and your WordPress discussion settings are like [this](http://winkpress.com/wp-content/uploads/2011/04/discussion-settings.png):
 
-If your WordPress discussion settings are like the [screenshot](http://winkpress.com/wp-content/uploads/2011/04/discussion-settings.png) and you have 21 comments on a certain post, here’s how WordPress will display the comments:
+1. Comments are paginated
+2. Last page displayed by default
+3. Newer comments displayed at the top of each page
+
+Then here's how WordPress will display the comments:
 
 Default page will show only one comment, #21
 
@@ -25,20 +29,22 @@ More details [here](http://winkpress.com/articles/fix-reversed-comments-paginati
 
 ### Installation ###
 
-Upload and activate. **Then** you must make a minor modification to your theme.
+After you upload and activate, you must make a minor modification to your theme.
 
 Look for `wp_list_comments` in your theme. It's probably in `comments.php`.
 
 Before you call `wp_list_comments`, you must create a new PHP class to display the comments. Then add it to the `wp_list_comments` call -- like this:
 
-`if (class_exists('Walker_Comment_Wink'))
+`
+if (class_exists('Walker_Comment_Wink'))
   $walker = new Walker_Comment_Wink();
 else
   $walker = '';
  
-wp_list_comments(array('walker' => $walker));`
+wp_list_comments(array('walker' => $walker));
+`
 
-Note that the plugin will only take effect if your comments display settings are exactly like the red circles in the screenshot above. If your settings are different, the plugin won’t interfere with how your comments are displayed.
+Note that the plugin will only take effect if your comments display settings are exactly like the red circles in [this screenshot](http://winkpress.com/wp-content/uploads/2011/04/discussion-settings.png). If your settings are different, the plugin won't interfere with how your comments are displayed.
 
 More details [here](http://winkpress.com/articles/fix-reversed-comments-pagination/).
 
@@ -52,7 +58,7 @@ The comment could after awhile move to page 2 of comments and the link will no l
 
 ### Bug Reports & Issues ###
 
-I’m using this plugin on my site and have tested it else where. It works great. But your setup might be different and you may notice things I missed. If that’s the case, tell me in the [comments of the plugin's page](http://winkpress.com/articles/fix-reversed-comments-pagination/).
+I'm using this plugin on my site and have tested it else where. It works great. But your setup might be different and you may notice things I missed. If that's the case, tell me in the [comments of the plugin's page](http://winkpress.com/articles/fix-reversed-comments-pagination/).
 
 Developed by [WinkPress](http://winkpress.com/).
 == Changelog ==
