@@ -14,8 +14,9 @@ Fixes WordPress reversed comments pagination issue where it doesn't fill the def
 If you have 21 comments on a certain post, and your WordPress discussion settings are like [this](http://winkpress.com/wp-content/uploads/2011/04/discussion-settings.png):
 
 1. Comments are paginated
-2. Last page displayed by default
-3. Newer comments displayed at the top of each page
+2. 20 comments per page
+3. Last page displayed by default
+4. Newer comments displayed at the top of each page
 
 Then here's how WordPress will display the comments:
 
