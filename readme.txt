@@ -49,14 +49,6 @@ Note that the plugin will only take effect if your comments display settings are
 
 More details [here](http://winkpress.com/articles/fix-reversed-comments-pagination/).
 
-### One Thing to Consider ###
-
-With this implementation of pagination, some times comments move from one page to another. So, in some cases, a permalink that leads to one particular comment might no longer work. For example, if you have a comment that appears on page one, and another blogger links to that comment directly:
-
-`http://example.com/controversial-post/comment-page-1/#comment-134`
-
-The comment could after awhile move to page 2 of comments and the link will no longer lead to the right comment.
-
 ### Bug Reports & Issues ###
 
 I'm using this plugin on my site and have tested it else where. It works great. But your setup might be different and you may notice things I missed. If that's the case, tell me in the [comments of the plugin's page](http://winkpress.com/articles/fix-reversed-comments-pagination/).

@@ -9,7 +9,7 @@ Author URI: http://winkpress.com/
 */
 function wink_good_discussion_settings()
 {
-  // If comments are not paginated, newer to oldest, and last page first
+  // If comments are not paginated
   if (!get_option('page_comments'))
     return false;
 
@@ -22,7 +22,7 @@ function wink_good_discussion_settings()
     return false;
 
   // Otherwise,
-    return true;
+  return true;
 }
 
 if (wink_good_discussion_settings()):
