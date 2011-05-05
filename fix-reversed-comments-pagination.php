@@ -4,7 +4,7 @@ Plugin Name: Fix Reversed Comments Pagination
 Plugin URI: http://winkpress.com/articles/fix-reversed-comments-pagination/
 Description: Fixes a problem with reversed comments pagination. See <a href="http://winkpress.com/articles/fix-reversed-comments-pagination/">this</a> for more details.
 Author: WinkPress
-Version: 0.5
+Version: 1.0
 Author URI: http://winkpress.com/
 */
 function wink_good_discussion_settings()
