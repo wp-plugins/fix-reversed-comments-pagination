@@ -3,7 +3,7 @@ Contributors: msafi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7663346
 Tags: comments, pagination
 Requires at least: 3.1
-Tested up to: 3.1.1
+Tested up to: 3.1.2
 Stable tag: trunk
 
 Fixes WordPress reversed comments pagination issue where it doesn't fill the default page with comments.
